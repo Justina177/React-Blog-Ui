@@ -11,6 +11,9 @@
 
 .topLeft, .topRight {
     flex: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .topCenter {
@@ -43,7 +46,7 @@
 .topListItem {
     margin-right: 20px;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 300;
     cursor: pointer;
 }
 
