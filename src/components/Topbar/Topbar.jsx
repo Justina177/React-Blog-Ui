@@ -4,6 +4,7 @@ import img1 from '../../Img/f4.jpg'
 import { Link } from 'react-router-dom';
 
 export default function Topbar() {
+  const user = true;
   return (
     <div className="top">
       <div className="topLeft">
@@ -27,8 +28,7 @@ export default function Topbar() {
           <Link className="link" to="/">WRITE</Link>
           </li>
           <li className="topListItem">
-          <Link className="link" to="/">LOGOUT</Link>
-          </li>
+          </li>{ user && "LOGOUT" }
         </ul>
       </div>
       <div className="topRight">
