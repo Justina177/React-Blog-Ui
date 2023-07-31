@@ -1,6 +1,7 @@
 import React from 'react';
 import './Topbar.css';
 import img1 from '../../Img/f4.jpg'
+import { Link } from 'react-router-dom';
 
 export default function Topbar() {
   return (
@@ -13,11 +14,21 @@ export default function Topbar() {
       </div>
       <div className="topCenter">
         <ul className="topList">
-          <li className="topListItem">Home</li>
-          <li className="topListItem">About</li>
-          <li className="topListItem">Contact</li>
-          <li className="topListItem">Write</li>
-          <li className="topListItem">Logout</li>
+          <li className="topListItem">
+            <Link className="link" to="/">HOME</Link>
+          </li>
+          <li className="topListItem">
+          <Link className="link" to="/">ABOUT</Link>
+          </li>
+          <li className="topListItem">
+          <Link className="link" to="/">CONTACT</Link>
+          </li>
+          <li className="topListItem">
+          <Link className="link" to="/">WRITE</Link>
+          </li>
+          <li className="topListItem">
+          <Link className="link" to="/">LOGOUT</Link>
+          </li>
         </ul>
       </div>
       <div className="topRight">
